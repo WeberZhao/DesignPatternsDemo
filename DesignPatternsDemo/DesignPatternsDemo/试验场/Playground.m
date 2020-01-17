@@ -31,6 +31,17 @@
 #import "Composite.h"
 #import "Leaf.h"
 
+#import "RefinedAbstraction.h"
+#import "ConcreteImplementorA.h"
+#import "ConcreteImplementorB.h"
+
+#import "Receiver.h"
+#import "Invoker.h"
+#import "ConcreteCommand.h"
+
+#import "Originator.h"
+#import "Caretaker.h"
+
 @implementation Playground
 
 - (void)testStrate{
@@ -121,6 +132,43 @@
     [comp add:comp2];
     
     [root display];
+}
+
+- (void)testBridgePattern{
+    AbstractionBridge *ab = [RefinedAbstraction new];
+    ///实现A
+    ab.implementor = [ConcreteImplementorA new];
+    [ab Operation];
+    ///实现B
+    ab.implementor = [ConcreteImplementorB new];
+    [ab Operation];
+}
+
+
+- (void)testCommandPattern{
+    ///执行者
+    Receiver *r = [Receiver new];
+    ///命令
+    Command *c = [ConcreteCommand new];
+    c.receiver = r;
+    ///调用者
+    Invoker *i = [Invoker new];
+    i.command = c;
+    ///发起执行命令
+    [i ExecuteCommand];
+}
+
+
+- (void)testMemento{
+    Originator *o = [Originator new];
+    o.state = @"ON";
+    ///备份
+    Caretaker *c = [Caretaker new];
+    c.memento = [o createMemento];
+    
+    o.state = @"OFF";
+    ///恢复
+    [o setMemento:c.memento];
 }
 
 @end
