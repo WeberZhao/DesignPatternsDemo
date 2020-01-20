@@ -42,6 +42,10 @@
 #import "Originator.h"
 #import "Caretaker.h"
 
+#import "ConcreteHandler1.h"
+#import "ConcreteHandler2.h"
+#import "ConcreteHandler3.h"
+
 @implementation Playground
 
 - (void)testStrate{
@@ -169,6 +173,17 @@
     o.state = @"OFF";
     ///恢复
     [o setMemento:c.memento];
+}
+
+
+- (void)testResponseChain{
+    AbstractHandler *h1 = [ConcreteHandler1 new];
+    AbstractHandler *h2 = [ConcreteHandler2 new];
+    AbstractHandler *h3 = [ConcreteHandler3 new];
+    h1.nextResponse = h2;
+    h2.nextResponse = h3;
+    
+    [h1 HandleRequest:25];
 }
 
 @end
