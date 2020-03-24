@@ -64,6 +64,13 @@
 		D4A1C47F237567B800CA0829 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A1C47E237567B800CA0829 /* main.m */; };
 		D4A1C48B2375696A00CA0829 /* WildTurkey.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A1C48A2375696A00CA0829 /* WildTurkey.m */; };
 		D4A1C48E237569DD00CA0829 /* TurkeyAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A1C48D237569DD00CA0829 /* TurkeyAdapter.m */; };
+		D4E765D723D93FA30032AF05 /* AbstractMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E765D623D93FA30032AF05 /* AbstractMediator.m */; };
+		D4E765DA23D93FBC0032AF05 /* Colleague.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E765D923D93FBC0032AF05 /* Colleague.m */; };
+		D4E765DD23D9405D0032AF05 /* ConcreteMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E765DC23D9405D0032AF05 /* ConcreteMediator.m */; };
+		D4E765E023D9407E0032AF05 /* ConcreteColleage1.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E765DF23D9407E0032AF05 /* ConcreteColleage1.m */; };
+		D4E765E323D9408E0032AF05 /* ConcreteColleage2.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E765E223D9408E0032AF05 /* ConcreteColleage2.m */; };
+		D4E765E823D96BC20032AF05 /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E765E723D96BC20032AF05 /* Circle.m */; };
+		D4E765EB23D96D160032AF05 /* ShapeFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E765EA23D96D160032AF05 /* ShapeFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -191,6 +198,21 @@
 		D4A1C48A2375696A00CA0829 /* WildTurkey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WildTurkey.m; sourceTree = "<group>"; };
 		D4A1C48C237569DD00CA0829 /* TurkeyAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TurkeyAdapter.h; sourceTree = "<group>"; };
 		D4A1C48D237569DD00CA0829 /* TurkeyAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TurkeyAdapter.m; sourceTree = "<group>"; };
+		D4E765D523D93FA30032AF05 /* AbstractMediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractMediator.h; sourceTree = "<group>"; };
+		D4E765D623D93FA30032AF05 /* AbstractMediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstractMediator.m; sourceTree = "<group>"; };
+		D4E765D823D93FBC0032AF05 /* Colleague.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Colleague.h; sourceTree = "<group>"; };
+		D4E765D923D93FBC0032AF05 /* Colleague.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Colleague.m; sourceTree = "<group>"; };
+		D4E765DB23D9405D0032AF05 /* ConcreteMediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteMediator.h; sourceTree = "<group>"; };
+		D4E765DC23D9405D0032AF05 /* ConcreteMediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteMediator.m; sourceTree = "<group>"; };
+		D4E765DE23D9407E0032AF05 /* ConcreteColleage1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteColleage1.h; sourceTree = "<group>"; };
+		D4E765DF23D9407E0032AF05 /* ConcreteColleage1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteColleage1.m; sourceTree = "<group>"; };
+		D4E765E123D9408E0032AF05 /* ConcreteColleage2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteColleage2.h; sourceTree = "<group>"; };
+		D4E765E223D9408E0032AF05 /* ConcreteColleage2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteColleage2.m; sourceTree = "<group>"; };
+		D4E765E523D96B980032AF05 /* Shape.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shape.h; sourceTree = "<group>"; };
+		D4E765E623D96BC20032AF05 /* Circle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
+		D4E765E723D96BC20032AF05 /* Circle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
+		D4E765E923D96D160032AF05 /* ShapeFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShapeFactory.h; sourceTree = "<group>"; };
+		D4E765EA23D96D160032AF05 /* ShapeFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShapeFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -429,6 +451,8 @@
 		D4A1C471237567B300CA0829 /* DesignPatternsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D4E765E423D96B640032AF05 /* 享元模式 */,
+				D4E765D423D93F630032AF05 /* 中介者模式 */,
 				D472EDAC23D552BC00AD4AE5 /* 职责链模式 */,
 				D472ED9123D038E400AD4AE5 /* 备忘录模式 */,
 				D472ED8423D00DEB00AD4AE5 /* 命令模式 */,
@@ -468,6 +492,35 @@
 				D4A1C48D237569DD00CA0829 /* TurkeyAdapter.m */,
 			);
 			path = "适配器模式";
+			sourceTree = "<group>";
+		};
+		D4E765D423D93F630032AF05 /* 中介者模式 */ = {
+			isa = PBXGroup;
+			children = (
+				D4E765D523D93FA30032AF05 /* AbstractMediator.h */,
+				D4E765D623D93FA30032AF05 /* AbstractMediator.m */,
+				D4E765D823D93FBC0032AF05 /* Colleague.h */,
+				D4E765D923D93FBC0032AF05 /* Colleague.m */,
+				D4E765DB23D9405D0032AF05 /* ConcreteMediator.h */,
+				D4E765DC23D9405D0032AF05 /* ConcreteMediator.m */,
+				D4E765DE23D9407E0032AF05 /* ConcreteColleage1.h */,
+				D4E765DF23D9407E0032AF05 /* ConcreteColleage1.m */,
+				D4E765E123D9408E0032AF05 /* ConcreteColleage2.h */,
+				D4E765E223D9408E0032AF05 /* ConcreteColleage2.m */,
+			);
+			path = "中介者模式";
+			sourceTree = "<group>";
+		};
+		D4E765E423D96B640032AF05 /* 享元模式 */ = {
+			isa = PBXGroup;
+			children = (
+				D4E765E523D96B980032AF05 /* Shape.h */,
+				D4E765E623D96BC20032AF05 /* Circle.h */,
+				D4E765E723D96BC20032AF05 /* Circle.m */,
+				D4E765E923D96D160032AF05 /* ShapeFactory.h */,
+				D4E765EA23D96D160032AF05 /* ShapeFactory.m */,
+			);
+			path = "享元模式";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -565,7 +618,9 @@
 				D4A1C47F237567B800CA0829 /* main.m in Sources */,
 				D472ED1323CD633800AD4AE5 /* Build.m in Sources */,
 				D472ED8023CFF6E200AD4AE5 /* ConcreteImplementorB.m in Sources */,
+				D4E765DD23D9405D0032AF05 /* ConcreteMediator.m in Sources */,
 				D472ED4C23CD973400AD4AE5 /* SqlserverDepartment.m in Sources */,
+				D4E765D723D93FA30032AF05 /* AbstractMediator.m in Sources */,
 				D420D57C237A9611001F4BB2 /* ConcreteArray.m in Sources */,
 				D472ED8323CFF70F00AD4AE5 /* RefinedAbstraction.m in Sources */,
 				D472ED6123CDBADC00AD4AE5 /* ConcreteStateA.m in Sources */,
@@ -576,13 +631,17 @@
 				D4A1C474237567B300CA0829 /* AppDelegate.m in Sources */,
 				D472ED9023D00E4700AD4AE5 /* Receiver.m in Sources */,
 				D472ED6723CDBAFF00AD4AE5 /* StateContext.m in Sources */,
+				D4E765DA23D93FBC0032AF05 /* Colleague.m in Sources */,
 				D472ED2023CD654100AD4AE5 /* SubSystemOne.m in Sources */,
+				D4E765EB23D96D160032AF05 /* ShapeFactory.m in Sources */,
 				D472ED1623CD639500AD4AE5 /* PersonThinBuilder.m in Sources */,
 				D472ED7123CE996000AD4AE5 /* Composite.m in Sources */,
 				D472EDB523D5534C00AD4AE5 /* ConcreteHandler2.m in Sources */,
 				D472ED6423CDBAEA00AD4AE5 /* ConcreteStateB.m in Sources */,
 				D472ED4923CD972200AD4AE5 /* AccessUser.m in Sources */,
 				D472ED0623CD598A00AD4AE5 /* ConcreteStrategyA.m in Sources */,
+				D4E765E823D96BC20032AF05 /* Circle.m in Sources */,
+				D4E765E023D9407E0032AF05 /* ConcreteColleage1.m in Sources */,
 				D472ED7723CFF66700AD4AE5 /* Implementor.m in Sources */,
 				D472ED5923CDA11400AD4AE5 /* ConcreteClassB.m in Sources */,
 				D472ED8723D00E1100AD4AE5 /* Command.m in Sources */,
@@ -595,6 +654,7 @@
 				D472ED9423D0390C00AD4AE5 /* Originator.m in Sources */,
 				D420D578237A9042001F4BB2 /* ConcreteIterator.m in Sources */,
 				D472ED1923CD63A400AD4AE5 /* PersonFatBuilder.m in Sources */,
+				D4E765E323D9408E0032AF05 /* ConcreteColleage2.m in Sources */,
 				D4A1C48B2375696A00CA0829 /* WildTurkey.m in Sources */,
 				D472ED8A23D00E2300AD4AE5 /* ConcreteCommand.m in Sources */,
 				D472ED2923CD68E500AD4AE5 /* Facade.m in Sources */,

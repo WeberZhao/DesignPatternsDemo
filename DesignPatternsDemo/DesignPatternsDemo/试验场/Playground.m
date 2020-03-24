@@ -46,6 +46,13 @@
 #import "ConcreteHandler2.h"
 #import "ConcreteHandler3.h"
 
+#import "ConcreteColleage1.h"
+#import "ConcreteColleage2.h"
+#import "ConcreteMediator.h"
+
+#import "ShapeFactory.h"
+#import "Circle.h"
+
 @implementation Playground
 
 - (void)testStrate{
@@ -184,6 +191,35 @@
     h2.nextResponse = h3;
     
     [h1 HandleRequest:25];
+}
+
+
+
+- (void)testMediator{
+    ConcreteMediator *m = [ConcreteMediator new];
+    
+    ConcreteColleage1 *c1 = [ConcreteColleage1 new];
+    ConcreteColleage2 *c2 = [ConcreteColleage2 new];
+    
+    m.colleage1 = c1;
+    m.colleage2 = c2;
+    
+    [c1 sendMessage:@"吃了吗？"];
+    [c2 sendMessage:@"没吃呢"];
+}
+
+
+- (void)testFlyweight{
+    NSArray *colors = @[@"Red", @"Green", @"Blue", @"White", @"Black"];
+    ShapeFactory *factory = [ShapeFactory new];
+    ///用5个基本颜色模型”创建“出20个对象
+    for(int i=0; i<20; i++){
+        Circle *c = [factory circleForColor:colors[i%5]];
+        c.x = i*2;
+        c.y = i*3;
+        c.radius = 100;
+        [c draw];
+    }
 }
 
 @end
